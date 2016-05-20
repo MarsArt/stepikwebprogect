@@ -1,4 +1,4 @@
-def hello_application(environ, start_response):
+def application(environ, start_response):
     body = [p for p in environ['QUERY_STRING'].split('&')]
     body = '\n'.join(body)
     status = '200 OK'
